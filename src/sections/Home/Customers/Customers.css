@@ -1,0 +1,29 @@
+.accordion{
+    --bs-accordion-bg: transparent !important;
+}
+.accordion-button:not(.collapsed){
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.accordion-button::after{
+    content: none !important;
+}
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+.accordion-button{
+    color: #fff !important;
+}
+.line{
+    width: 15px;
+    height: 3px;
+}
+.accordion-button:not(.collapsed) span.rorate90{
+    transform: translateX(-50%) translateY(-40%) rotate(90deg) !important;
+}
+.accordion-button.collapsed span.rorate90{
+    transform: translateX(-50%) translateY(-40%) rotate(0deg) !important;
+}
+.minmax{
+    width: 70px;
+}

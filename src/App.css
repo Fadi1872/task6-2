@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --red: #d81a46;
+    --gray: #eee;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.transition-5{
+    transition: .5s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.redHover:hover{
+    color: var(--red) !important;
 }
-
-.App-link {
-  color: #61dafb;
+.grayBg{
+    background-color: var(--gray);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grayBgHover:hover{
+    background-color: var(--gray);
+}
+.BackImg{
+    background: var(--img-url) no-repeat;
+    background-position:  var(--position);
+    background-size: cover;
+}
+.fixedBackimg{
+    background: linear-gradient(-135deg,#000, #00000099), var(--fixed-img);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bigFont{
+    font-size: 5.5rem;
+}
+.btnBlack{
+    border:  1px #fff solid;
+}
+.btnBlack:hover{
+    background-color: var(--red) !important;
+    border: 1px var(--red) solid;
+}
+.cursor{
+    cursor: pointer;
+}
+.minHeight{
+    min-height: 300px;
 }

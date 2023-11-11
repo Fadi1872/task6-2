@@ -1,0 +1,9 @@
+.notactiveLeft{
+    transform: translateX(-1000%);
+}
+.notactiveRight{
+    transform: translateX(1000%);
+}
+.carousel-item.active .notactiveLeft, .carousel-item.active .notactiveRight{
+    transform: translateX(0);
+}

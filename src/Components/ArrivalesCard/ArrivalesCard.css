@@ -1,0 +1,17 @@
+.aspect-ratio{
+    aspect-ratio: 9/11;
+}
+.cardHover:hover{
+    border: 1px solid var(--red) !important;
+}
+.cardHover:hover .translateOnHover{
+    transform: translateY(-100%);
+}
+.translateOnHover:hover{
+    background: var(--red) !important;
+}
+.discountSquare{
+    width: 75px;
+    height: 75px;
+    transform: translateX(20%) translateY(20%);
+}

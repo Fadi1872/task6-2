@@ -1,0 +1,15 @@
+.list-inline li::after{
+    content: "|";
+    padding-inline: 15px;
+    color: #fff !important;
+}
+.list-inline li:nth-child(5):after{
+    content: none;
+}
+.smallSquare{
+    width: 40px;
+    height: 40px;
+}
+.outlineNone{
+    outline: none;
+}

@@ -1,0 +1,66 @@
+.navbar{
+    z-index: 2000 !important;
+}
+.offcanvas.offcanvas-start{
+    top: 56px !important;
+}
+.nav-menu{
+    width: 25px;
+    height: 20px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+.toggler-icon{
+    display: block;
+    background-color: #333;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+.middle-bar {
+    margin-top: 0;
+}
+.nav-menu.clicked .top-bar{
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+.nav-menu.clicked .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.nav-menu.clicked .bottom-bar{
+    margin-top: 0;
+    transform: rotate(-135deg);    
+}
+
+.nav-menu .top-bar{
+    margin-top: -10px;
+    transform: rotate(0deg);
+}
+.nav-menu .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+.nav-menu .bottom-bar{
+    margin-top: 10px;
+    transform: rotate(0deg);
+}
+.navbar-collapse .dropdown-toggle{
+    position: static !important;
+}
+.navbar-collapse .dropdown-menu{
+    width: 90vw !important;
+    position: fixed !important;
+    top: 46px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    border: none !important;
+}
+.navbar-brand{
+    width: 100px;
+}
